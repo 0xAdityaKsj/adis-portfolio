@@ -44,12 +44,18 @@ export default function ThreeScene() {
             })
         );
         scene.add(planet);
+        planet.position.set(10, 0, -100000);
 
         // stars:
 
         let starGeometry = new THREE.BufferGeometry();
-        let starMaterial = new THREE.PointsMaterial({ color: 0xffffff });
-
+        let starMaterial = new THREE.PointsMaterial({
+            color: 0xFF0000,
+            size: 1.5,  // Adjust size to your liking
+            sizeAttenuation: true,
+            transparent: true,
+            alphaTest: 0.5  // Adjust based on your needs to handle transparency
+        });
         let starVertices = [];
         for (let i = 0; i < 50000; i++) {
             const x = THREE.MathUtils.randFloatSpread(2000);
@@ -67,9 +73,9 @@ export default function ThreeScene() {
         const animate = () => {
             requestAnimationFrame(animate);
             planet.rotation.x += 0.005;
-            stars.rotation.x += 0.0005;
-            stars.rotation.y += 0.0005;
-            controls.update(); // Only call this if there are controls that need updating each frame
+            stars.rotation.x += 0.0009;
+            stars.rotation.y += 0.0009;
+            controls.update();
             renderer.render(scene, camera);
         };
         animate();

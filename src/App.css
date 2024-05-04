@@ -1,1 +1,21 @@
-body {}
+/* App.css */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.about {
+    font-family: 'Jersey 15', sans-serif;
+
+}
+
+span {
+    color: rgb(116, 71, 200);
+    text-decoration: underline;
+}
