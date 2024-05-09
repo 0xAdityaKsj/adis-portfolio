@@ -33,7 +33,7 @@ export default function ThreeScene() {
         controls.update();
 
         // Planet
-        const textureLoader = new THREE.TextureLoader();
+        /*const textureLoader = new THREE.TextureLoader();
         const albedoTexture = textureLoader.load('../public/moon.jpg');
         const normalTexture = textureLoader.load('../public/spaceship-panels1-normal-ogl.png');
         const planet = new THREE.Mesh(
@@ -44,7 +44,7 @@ export default function ThreeScene() {
             })
         );
         scene.add(planet);
-        planet.position.set(10, 0, -100000);
+        planet.position.set(10, 0, -100000);**/
 
         // stars:
 
@@ -72,7 +72,7 @@ export default function ThreeScene() {
         // Animation Loop
         const animate = () => {
             requestAnimationFrame(animate);
-            planet.rotation.x += 0.005;
+            //planet.rotation.x += 0.005;
             stars.rotation.x += 0.0009;
             stars.rotation.y += 0.0009;
             controls.update();
