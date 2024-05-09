@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Link, VStack, HStack, Button } from '@chakra-ui/react';
+import { Box, Text, Link, VStack, HStack } from '@chakra-ui/react';
 
 function About() {
     return (

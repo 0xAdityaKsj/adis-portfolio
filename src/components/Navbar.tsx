@@ -1,4 +1,4 @@
-import { Flex, Button, textDecoration, Box } from '@chakra-ui/react'
+import { Flex, Button, Box } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {

@@ -18,7 +18,10 @@ export default function ThreeScene() {
         camera.position.setZ(30);
         camera.position.setX(-3);
 
-        mountRef.current.appendChild(renderer.domElement);
+        if (mountRef.current) {
+            mountRef.current.appendChild(renderer.domElement);
+        }
+
 
         // Lights
 
