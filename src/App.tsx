@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; import { ChakraProvider, Box } from '@chakra-ui/react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; import { ChakraProvider, Box } from '@chakra-ui/react';
 import ThreeScene from './components/ThreeScene';
 import Home from './components/home';
 import Navbar from './components/Navbar';
