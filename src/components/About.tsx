@@ -22,7 +22,7 @@ function About() {
                     <Link href="https://missing.csail.mit.edu/" isExternal> <span>./missing_sem</span></Link></Text>
                 <Text>Learning Japanese | Hiragana</Text>
 
-                <iframe style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/track/2Qn6WHJrY5Im82Jux8FboH?utm_source=generator&theme=0" width="250" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/track/2Qn6WHJrY5Im82Jux8FboH?utm_source=generator&theme=0" width="250" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
                 <Text as="h2" fontSize="lg" fontWeight="bold">Contact</Text>
                 <HStack spacing={3}>
